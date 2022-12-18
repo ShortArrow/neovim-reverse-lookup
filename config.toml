@@ -1,0 +1,18 @@
+baseURL = 'http://example.org/'
+languageCode = 'ja'
+tittle = 'Neovim Reverse Lookup Cheetsheet'
+theme =  ["anubis"]
+[[menu.main]]
+identifier = "Top"
+name = "Top"
+title = "Top"
+url = "/"
+weight = -100
+[[menu.main]]
+identifier = "about"
+name = "About"
+title = "About"
+url = "/about"
+weight = 1
+[params]
+style = 'dark'

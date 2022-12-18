@@ -1,0 +1,58 @@
+languageCode = "en-us"
+baseUrl = ""
+title = "Anubis"
+theme = "anubis"
+paginate = 10
+disqusShortname = "yourdiscussshortname"
+googleAnalytics = "G-12345"
+enableRobotsTXT = true
+[[menu.main]]
+identifier = "archive"
+name = "Archive"
+title = "Archive"
+url = "/posts/"
+weight = 0
+
+[params]
+author = "John Doe"
+email = "mail@example.org"
+avatar = "/images/me.png"
+description = ""
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+style = "light-without-switcher"
+readMore = false
+readNextPosts = 5
+disableSummary = false
+copyCodeButton = true
+rssAsSocialIcon = true
+utterancesRepo = ""
+utterancesTheme = ""
+utterancesIssue = ""
+utterancesLabel = ""
+graphcommentId = ""
+
+[[params.social]]
+id = "github"
+name = "gohugoio"
+
+[params.isso]
+enabled = true
+data = "https://comments.example.com/"
+jsLocation = "https://comments.example.com/js/embed.min.js"
+css = true
+lang = "de"
+replyToSelf = true
+requireAuthor = true
+requireEmail = true
+id = "thread-id"
+avatar = true
+avatar-bg = "#f0f0f0"
+feed = false
+
+[params.webmentions]
+url = "https://yourdomain.com/webemntions/receive"
+login = "hugo-theme-anubis"
+pingback = true
+[markup.goldmark.renderer]
+unsafe = true
