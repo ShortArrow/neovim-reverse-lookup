@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://neovim-reverse-lookup.github.io/'
 languageCode = 'ja'
 tittle = 'Neovim Reverse Lookup Cheetsheet'
 theme =  ["anubis"]
