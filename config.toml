@@ -1,5 +1,4 @@
-baseURL = 'https:/ShortArrow.github.io/neovim-reverse-lookup'
-# baseURL = '/'
+baseURL = '/'
 languageCode = 'ja'
 DefaultContentLanguage = "ja"
 defaultContetLanguageInSubdir = true
