@@ -1,14 +1,19 @@
 # Neovim Reverse Lookup Cheetsheet
 
-
-## Start Tutorial
+## Start tutorial
 
 ```:bash
 :Tutor
 ```
 
-## Check Error messages
+## Check error messages
 
 ```:bash
 :message
+```
+
+## Cheack health of Neovim
+
+```:bash
+:checkhealth
 ```

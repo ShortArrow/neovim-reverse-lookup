@@ -12,3 +12,9 @@
 ```:bash
 :message
 ```
+
+## Neovimの健康診断
+
+```:bash
+:checkhealth
+```
