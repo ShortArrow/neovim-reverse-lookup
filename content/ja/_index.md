@@ -1,8 +1,9 @@
 ---
 title: "Neovim 逆引きチートシート"
 ---
-# 基本
+# Neovim 逆引きチートシート
 
+# 基本
 
 ## チュートリアルを始める Tutorial
 
@@ -21,3 +22,13 @@ title: "Neovim 逆引きチートシート"
 ```:bash
 :checkhealth
 ```
+
+# リンク
+
+- [homepage](https://neovim.io/)
+- [repo](https://github.com/neovim/neovim)
+
+# 貢献
+
+- [repo](https://github.com/ShortArrow/neovim-reverse-lookup/)
+
