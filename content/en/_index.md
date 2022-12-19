@@ -1,4 +1,7 @@
-# Neovim Reverse Lookup Cheetsheet
+---
+title: "Neovim Reverse Lookup Cheetsheet"
+---
+# Basic 
 
 ## Start tutorial
 
