@@ -25,7 +25,7 @@ title: "Neovim 逆引きチートシート"
 
 ## Lua ガイド
 
-<https://neovim.io/doc/user/lua-guide.html#lua-guide>
+<https://neovim.io/doc/user/lua-guide.html>
 
 # リンク
 
