@@ -23,10 +23,14 @@ title: "Neovim 逆引きチートシート"
 :checkhealth
 ```
 
+## Lua ガイド
+
+<https://neovim.io/doc/user/lua-guide.html#lua-guide>
+
 # リンク
 
-- [homepage](https://neovim.io/)
-- [repo](https://github.com/neovim/neovim)
+- [Neovim official site](https://neovim.io/)
+- [Official repository](https://github.com/neovim/neovim)
 
 # 貢献
 

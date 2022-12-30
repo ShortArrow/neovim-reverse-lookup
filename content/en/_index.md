@@ -23,10 +23,14 @@ title: "Neovim Reverse Lookup Cheetsheet"
 :checkhealth
 ```
 
+## Lua guide
+
+<https://neovim.io/doc/user/lua-guide.html#lua-guide>
+
 # Link
 
-- [homepage](https://neovim.io/)
-- [repo](https://github.com/neovim/neovim)
+- [Neovim official site](https://neovim.io/)
+- [Official repository](https://github.com/neovim/neovim)
 
 # Contribute
 
