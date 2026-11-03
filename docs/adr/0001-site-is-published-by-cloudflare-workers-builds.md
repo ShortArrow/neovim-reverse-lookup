@@ -11,7 +11,7 @@
 ## 決定
 
 - サイトは、neovim-reverse-lookup.shortarrow.jp で `public/` を静的アセットとして配る Worker とする。Workers Builds をリポジトリにつなぎ、`main` を公開し、ほかのブランチは preview としてビルドする。
-- ビルドコマンドは `wrangler.jsonc` の `build.command` に置き、`wrangler deploy` がビルドから公開までを行う。Hugo の版は Workers Builds の環境変数 `HUGO_VERSION` で指定し、GitHub Pages で使っていた `0.108.0`（extended）を引き継ぐ。
+- ビルドコマンドは `wrangler.jsonc` の `build.command` に置き、`wrangler deploy` がビルドから公開までを行う。ビルドコマンドは `scripts/build.sh` で、GitHub Pages で使っていた Hugo extended `0.108.0` を取得し、SHA-256 を確かめてから実行する。Workers Builds の環境変数 `HUGO_VERSION` で入る Hugo は extended ではないので、テーマの SCSS を変換できない。
 - `baseURL` は `config.toml` に絶対 URL で書く。GitHub Pages のワークフローは `--baseURL` で渡していたが、Workers Builds は渡さない。
 - 本番のサイトは workers.dev では配らない。
 - GitHub Actions のワークフローは置かない。
@@ -31,5 +31,6 @@
 
 ## 結果
 
-- ローカルで `wrangler dev` や `wrangler deploy` を使うには、`HUGO_VERSION` と同じ版の Hugo extended が PATH に要る。
+- Hugo の版とハッシュは `scripts/build.sh` だけに置く。Workers Builds の環境変数 `HUGO_VERSION` は要らない。
+- ローカルでも `scripts/build.sh` で同じ Hugo でビルドできる（linux-amd64 のみ）。
 - Hugo を上げるときは、テーマも一緒に上げる。

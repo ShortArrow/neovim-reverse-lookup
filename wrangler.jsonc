@@ -3,7 +3,7 @@
   "name": "neovim-reverse-lookup",
   "compatibility_date": "2026-11-01",
   "build": {
-    "command": "hugo --minify"
+    "command": "bash scripts/build.sh"
   },
   "assets": {
     "directory": "./public",
