@@ -12,7 +12,7 @@
 
 - サイトは、neovim-reverse-lookup.shortarrow.jp で `public/` を静的アセットとして配る Worker とする。Workers Builds をリポジトリにつなぎ、`main` を公開し、ほかのブランチは preview としてビルドする。
 - ビルドコマンドは `wrangler.jsonc` の `build.command` に置き、`wrangler deploy` がビルドから公開までを行う。ビルドコマンドは `scripts/build.sh` で、GitHub Pages で使っていた Hugo extended `0.108.0` を取得し、SHA-256 を確かめてから実行する。Workers Builds の環境変数 `HUGO_VERSION` で入る Hugo は extended ではないので、テーマの SCSS を変換できない。
-- `baseURL` は `config.toml` に絶対 URL で書く。GitHub Pages のワークフローは `--baseURL` で渡していたが、Workers Builds は渡さない。
+- `baseURL` は `config.toml` に絶対 URL で書く。GitHub Pages のワークフローは `--baseURL` で渡していたが、Workers Builds は渡さない。テーマは CSS などを `baseURL` からの絶対 URL で参照するので、`main` 以外のビルド（preview）では `scripts/build.sh` が `--baseURL /` で上書きし、preview の URL でもアセットを読めるようにする。
 - 本番のサイトは workers.dev では配らない。
 - GitHub Actions のワークフローは置かない。
 

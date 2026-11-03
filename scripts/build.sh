@@ -24,6 +24,15 @@ if [[ ! -x "${hugo}" ]]; then
   rm -f "${archive}"
 fi
 
+# The theme links assets with absolute URLs built from baseURL. Only the
+# production build (main) is served at the domain in config.toml; preview
+# builds are served on other hosts, so they use a host-relative base URL.
+# WORKERS_CI_BRANCH is set by Workers Builds.
+base_url_args=()
+if [[ "${WORKERS_CI_BRANCH:-}" != "main" ]]; then
+  base_url_args=(--baseURL /)
+fi
+
 cd "${root}"
 "${hugo}" version
-"${hugo}" --minify "$@"
+"${hugo}" --minify "${base_url_args[@]}" "$@"
