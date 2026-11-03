@@ -2,4 +2,4 @@
 
 This is reverse lookup cheetsheet of Neovim
 
-[nrlcs.shortarrow.jp](https://nrlcs.shortarrow.jp/)
+[neovim-reverse-lookup.shortarrow.jp](https://neovim-reverse-lookup.shortarrow.jp/)

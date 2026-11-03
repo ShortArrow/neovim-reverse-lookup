@@ -1,4 +1,4 @@
-# ADR-0001: サイトは Cloudflare Workers Builds で nrlcs.shortarrow.jp に公開する
+# ADR-0001: サイトは Cloudflare Workers Builds で neovim-reverse-lookup.shortarrow.jp に公開する
 
 - 状態: 採用
 
@@ -10,7 +10,7 @@
 
 ## 決定
 
-- サイトは、nrlcs.shortarrow.jp で `public/` を静的アセットとして配る Worker とする。Workers Builds をリポジトリにつなぎ、`main` を公開し、ほかのブランチは preview としてビルドする。
+- サイトは、neovim-reverse-lookup.shortarrow.jp で `public/` を静的アセットとして配る Worker とする。Workers Builds をリポジトリにつなぎ、`main` を公開し、ほかのブランチは preview としてビルドする。
 - ビルドコマンドは `wrangler.jsonc` の `build.command` に置き、`wrangler deploy` がビルドから公開までを行う。Hugo の版は Workers Builds の環境変数 `HUGO_VERSION` で指定し、GitHub Pages で使っていた `0.108.0`（extended）を引き継ぐ。
 - `baseURL` は `config.toml` に絶対 URL で書く。GitHub Pages のワークフローは `--baseURL` で渡していたが、Workers Builds は渡さない。
 - 本番のサイトは workers.dev では配らない。

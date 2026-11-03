@@ -1,4 +1,4 @@
-baseURL = 'https://nrlcs.shortarrow.jp/'
+baseURL = 'https://neovim-reverse-lookup.shortarrow.jp/'
 languageCode = 'ja'
 DefaultContentLanguage = "ja"
 defaultContetLanguageInSubdir = true
